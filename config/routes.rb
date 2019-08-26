@@ -9,5 +9,11 @@ namespace :api do
     post "/npos" => "npos#create"
     get "/npos/:id" => "npos#show"
     patch "/npos/:id" => "npos#update"
+
+    get "/events" => "events#index"
+    post "/events" => "events#create"
+    get "/events/:id" => "events#show"
+    patch "/events/:id" => "events#update"
+    delete "/events/:id" => "events#destroy"
   end
 end
