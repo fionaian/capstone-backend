@@ -1,0 +1,7 @@
+{
+  id: event.id,
+  npo_id: event.npo_id,
+  name: event.name,
+  start_datetime: event.start_datetime,
+  end_datetime: event.end_datetime,
+}
