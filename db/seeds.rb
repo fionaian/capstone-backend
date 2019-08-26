@@ -5,3 +5,10 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+Cause.create!(title: "Education")
+Cause.create!(title: "Media")
+Cause.create!(title: "Social Services")
+Cause.create!(title: "Performaing Arts")
+Cause.create!(title: "Animal Care")
+Cause.create!(title: "Human Rights")
