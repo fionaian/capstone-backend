@@ -1,0 +1,3 @@
+@npos.map do |npo|
+  render partial: "npo.json.jb", locals: { npo: npo }
+end

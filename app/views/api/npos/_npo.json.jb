@@ -1,0 +1,5 @@
+{
+  id: npo.id,
+  name: npo.name,
+  cause_id: npo.cause_id,
+}

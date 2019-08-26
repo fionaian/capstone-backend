@@ -1,0 +1,1 @@
+render partial: "npo.json.jb", locals: { npo: @npo }
