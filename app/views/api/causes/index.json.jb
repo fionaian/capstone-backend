@@ -1,0 +1,3 @@
+@causes.map do |cause|
+  render partial: "cause.json.jb", locals: { cause: cause }
+end

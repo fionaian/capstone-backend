@@ -1,0 +1,5 @@
+{
+  id: cause.id,
+  title: cause.title,
+  npos: cause.npos
+}
