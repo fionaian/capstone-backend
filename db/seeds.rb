@@ -34,3 +34,9 @@ Event.create!(npo_id: "7", name: "Foster Animal Care Workshop", start_datetime: 
 Event.create!(npo_id: "8", name: "Literacy Skills Workshop", start_datetime: DateTime.new(2019, 9, 17, 7, 9), end_datetime: DateTime.new(2019, 12, 10, 7, 9))
 Event.create!(npo_id: "9", name: "Citizenship Workshop", start_datetime: DateTime.new(2019, 9, 17, 7, 9), end_datetime: DateTime.new(2019, 12, 10, 7, 9))
 Event.create!(npo_id: "10", name: "Sound and Stage Crew", start_datetime: DateTime.new(2019, 9, 17, 7, 9), end_datetime: DateTime.new(2019, 12, 10, 7, 9))
+
+User.create!(name: "Leslie Knope", email: "leslie.knope@email.com", phone: "773-555-1111", password: "password")
+User.create!(name: "Ann Perkins", email: "ann.perkins@email.com", phone: "312-555-2222", password: "password")
+User.create!(name: "Donna Meagle", email: "donna.meagle@email.com", phone: "773-555-3333", password: "password")
+User.create!(name: "April Ludgate", email: "april.ludgate@email.com", phone: "773-555-4444", password: "password")
+User.create!(name: "Andy Dwyer", email: "andy.dwyer@email.com", phone: "773-555-5555", password: "password")
