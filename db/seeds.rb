@@ -40,3 +40,9 @@ User.create!(name: "Ann Perkins", email: "ann.perkins@email.com", phone: "312-55
 User.create!(name: "Donna Meagle", email: "donna.meagle@email.com", phone: "773-555-3333", password: "password")
 User.create!(name: "April Ludgate", email: "april.ludgate@email.com", phone: "773-555-4444", password: "password")
 User.create!(name: "Andy Dwyer", email: "andy.dwyer@email.com", phone: "773-555-5555", password: "password")
+
+EventUser.create!(event_id: "1", user_id: "1")
+EventUser.create!(event_id: "4", user_id: "2")
+EventUser.create!(event_id: "5", user_id: "3")
+EventUser.create!(event_id: "7", user_id: "4")
+EventUser.create!(event_id: "10", user_id: "5")

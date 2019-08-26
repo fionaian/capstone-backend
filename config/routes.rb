@@ -16,5 +16,8 @@ namespace :api do
     get "/events/:id" => "events#show"
     patch "/events/:id" => "events#update"
     delete "/events/:id" => "events#destroy"
+
+    get "/event_users" => "event_users#index"
+    delete "/event_users" => "event_users#destroy"
   end
 end
