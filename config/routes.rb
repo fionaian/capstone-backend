@@ -11,6 +11,7 @@ namespace :api do
     get "/npos/:id" => "npos#show"
     patch "/npos/:id" => "npos#update"
 
+    get "/all_events" => "events#all"
     get "/events" => "events#index"
     post "/events" => "events#create"
     get "/events/:id" => "events#show"

@@ -1,6 +1,15 @@
 class Api::EventsController < ApplicationController
+  def all
+    @all_events = Event.all
+    render "all.json.jb"
+  end
+
   def index
-    @events = Event.all
+    if current_user
+      @events = current_user.events
+    else
+      @events = []
+    end
     render "index.json.jb"
   end
 
