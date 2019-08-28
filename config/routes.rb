@@ -19,6 +19,7 @@ namespace :api do
     delete "/events/:id" => "events#destroy"
 
     get "/event_users" => "event_users#index"
-    delete "/event_users" => "event_users#destroy"
+    post "/event_users" => "event_users#create"
+    delete "/event_users/:id" => "event_users#destroy"
   end
 end

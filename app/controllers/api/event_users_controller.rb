@@ -1,21 +1,26 @@
 class Api::EventUsersController < ApplicationController
+  before_action :authenticate_user
+
   def index
-    @events = current_user.events
+    @event_users = current_user.event_users
     render "index.json.jb"
   end
 
   def create
-    @event_user = EventUser.new{
+    @event_user = EventUser.new(
       user_id: current_user.id,
       event_id: params[:event_id],
-    }
-    @event_user.save
+    )
+    if @event_user.save
+      render "show.json.jb"
+    else
+      render json: {errors: @event_user.errors.full_messages}, status: 422
+    end
   end
 
   def destroy
-    event_user = current_user.event_users
-    event_user.status = "removed"
-    event_user.save
+    @event_user = current_user.event_users.find_by(id: params[:id])
+    @event_user.destroy
     render json: { message: "Event successfully removed for user!" }
   end
 end
