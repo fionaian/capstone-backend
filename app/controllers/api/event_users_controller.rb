@@ -4,6 +4,14 @@ class Api::EventUsersController < ApplicationController
     render "index.json.jb"
   end
 
+  def create
+    @event_user = EventUser.new{
+      user_id: current_user.id,
+      event_id: params[:event_id],
+    }
+    @event_user.save
+  end
+
   def destroy
     event_user = current_user.event_users
     event_user.status = "removed"
