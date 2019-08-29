@@ -7,6 +7,11 @@ class Api::EventUsersController < ApplicationController
   end
 
   def create
+    if current_user.event_users.find_by(event_id: params[:event_id])
+      render json: {errors: ["You already are signed up for this event"]}, status: 422
+      return
+    end
+
     @event_user = EventUser.new(
       user_id: current_user.id,
       event_id: params[:event_id],
