@@ -3,5 +3,6 @@
   name: npo.name,
   cause_id: npo.cause_id,
   events: npo.events,
-  cause: npo.cause
+  cause: npo.cause,
+  twitter_url: npo.twitter_url
 }
