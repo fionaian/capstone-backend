@@ -1,0 +1,2 @@
+class HumanRight < ApplicationRecord
+end
