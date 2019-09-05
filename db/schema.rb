@@ -17,6 +17,7 @@ ActiveRecord::Schema.define(version: 2019_08_26_155451) do
 
   create_table "causes", force: :cascade do |t|
     t.string "title"
+    t.string "cause_image"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end

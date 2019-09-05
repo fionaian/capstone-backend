@@ -6,12 +6,12 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-Cause.create!(title: "Education")
-Cause.create!(title: "Media")
-Cause.create!(title: "Social Services")
-Cause.create!(title: "Performaing Arts")
-Cause.create!(title: "Animal Care")
-Cause.create!(title: "Human Rights")
+Cause.create!(title: "Education", cause_image: "https://icon-library.net/images/education-icon/education-icon-23.jpg")
+Cause.create!(title: "Media", cause_image: "https://marketplace.canva.com/MADHh7rHHyg/1/thumbnail_large/canva-woman-with-mobile-social-media-icons-MADHh7rHHyg.png")
+Cause.create!(title: "Social Services", cause_image: "https://dghscp.co.uk/wp-content/uploads/2018/10/Population-icon.png")
+Cause.create!(title: "Performaing Arts", cause_image: "https://cdn2.iconfinder.com/data/icons/travel-caramel-vol-3/256/THEATRE-512.png")
+Cause.create!(title: "Animal Care", cause_image: "http://pluspng.com/img-png/pet-care-png-emergency-pet-care-buckwalter-veterinary-clinic-bluffton-sc-650.png")
+Cause.create!(title: "Human Rights", cause_image: "https://images.assetsdelivery.com/compings_v2/vgarts/vgarts1506/vgarts150601440.jpg")
 
 Npo.create!(name: "Open Books", twitter_url: "https://twitter.com/openbookstores", cause_id: "1")
 Npo.create!(name: "South Side Weekly", twitter_url: "https://twitter.com/SouthSideWeekly", cause_id: "2")
