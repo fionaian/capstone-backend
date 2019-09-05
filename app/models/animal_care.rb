@@ -1,2 +1,0 @@
-class AnimalCare < ApplicationRecord
-end
