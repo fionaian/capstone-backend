@@ -21,5 +21,7 @@ namespace :api do
     get "/event_users" => "event_users#index"
     post "/event_users" => "event_users#create"
     delete "/event_users/:id" => "event_users#destroy"
+
+    get "/*path" => proc { [200, {}, [ActionView::Base.new.render(file: 'public/index.html')]] } 
   end
 end
